@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang = "da">
+    <head>
+        <meta charset="utf-8"/>
+        <title>svg</title>
+        <link rel='stylesheet' href='./svg55.css'/>
+        <script type='module'>
+            "use strict";
+            import {anim} from './svg55.js';
+
+            const go = function () {
+                anim('svg', 20, 3, 'vb')
+                anim('svg2', 20, 2, 'vb')
+            }
+            window.addEventListener('load', go);
+        </script>
+    </head>
+    <body>
+        <div id='vb'>
+            <svg class="svgs" id='svg'><use href='#image0'/></svg>
+            <svg class="svgs" id='svg2'><use href='#image0'/></svg>
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit
+                anim id est laborum.
+            </p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg">
+             <symbol id='image0'>
+                 <circle cx="10" cy="10" r="10" fill="blue"/>
+             </symbol>
+        </svg>
+    </body>
+</html>
